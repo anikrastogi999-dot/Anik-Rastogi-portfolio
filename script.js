@@ -189,3 +189,8 @@ document.querySelectorAll('.stat-value').forEach(el => {
   };
   updateCount();
 });
+
+
+document.getElementById("menuToggle").onclick = () => {
+  document.querySelector(".nav-links").classList.toggle("active");
+};
