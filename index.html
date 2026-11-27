@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anik Developer | Full Stack Developer</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/titlelogo.png" />
@@ -17,17 +17,17 @@
 
 <body>
 
-    <!-- Navbar -->
+    <!-- Navbar (Clean Public Navigation - No Upload Button) -->
     <nav class="navbar">
-        <div class="logo">
-            <img src="./assets/aniklogo.png" alt="Logo" class="logo-img">
+        <a href="#home" class="logo">
+            <img src="./assets/aniklogo.png" alt="Anik Rastogi Logo" class="logo-img">
             <div class="logo-content">
                 <h2>A R</h2>
                 <h2><span>WEB DEVELOPER</span></h2>
             </div>
-        </div>
+        </a>
 
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -35,7 +35,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <div class="menu-toggle" id="menuToggle">
+        <div class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
             <span></span>
             <span></span>
             <span></span>
@@ -52,13 +52,13 @@
         <div class="hero-content">
             <h3>Hello, I'm</h3>
             <h1>Anik <span>Rastogi</span></h1>
-            <h2><span class="typing">Full Stack Web Developer</span></h2>
+            <h2><span class="typing" id="typingText">Full Stack Web Developer</span></h2>
             <p>
-                I create premium modern websites with smooth animations, responsive layouts and luxury user experiences.
+                BCA developer building full-stack web applications, REST APIs, and responsive interfaces with clean architecture and strong problem-solving skills.
             </p>
 
             <div class="hero-buttons">
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/anikrastogi999-dot" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-github"></i> <span>GitHub</span>
                 </a>
 
@@ -66,7 +66,7 @@
                     <i class="fa-solid fa-file"></i> <span>Resume</span>
                 </a>
 
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/anik-rastogi-tech-programmerdev999" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span>
                 </a>
             </div>
@@ -89,24 +89,21 @@
                 <div class="title-line"></div>
 
                 <p class="about-text">
-                    I am a passionate <span class="gold-text">Frontend Developer</span> dedicated to crafting visually
-                    stunning and highly functional digital experiences. Balancing artistic design with clean, structured
-                    code is my core philosophy.
+                    I am a <span class="gold-text">BCA student & Full Stack Developer</span> focused on building practical, reliable web applications across frontend and backend workflows.
                 </p>
 
                 <p class="about-text">
-                    With a strong eye for detail, I specialize in transforming complex ideas into smooth, responsive,
-                    and luxury user interfaces that leave a lasting impression.
+                    I work with React, Node.js, Express, MongoDB, SQL, and Java (DSA), turning real-world ideas into clean interfaces, structured APIs, and smooth user experiences.
                 </p>
 
                 <div class="info-grid">
                     <div class="info-item">
                         <span class="info-label">Location:</span>
-                        <span class="info-value">Uttar Pradesh, India</span>
+                        <span class="info-value">Meerut, Uttar Pradesh, India</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">Specialization:</span>
-                        <span class="info-value">Frontend, Backend, UI/UX Design</span>
+                        <span class="info-value">Full Stack Web, REST APIs, Java DSA</span>
                     </div>
                 </div>
 
@@ -118,125 +115,99 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-<!-- Premium Professional Dashboard Section -->
-<section class="dashboard-container">
-  
-  <!-- Dashboard Header & Status Badges -->
-  <div class="dashboard-header">
-    <div class="profile-meta">
-      <h2 class="dashboard-title">Developer Intelligence Hub</h2>
-      <p class="dashboard-subtitle">Real-time performance metrics & professional trajectory</p>
-    </div>
-    <div class="status-badges">
-      <span class="badge badge-work">
-        <span class="pulse-dot"></span> Open To Work
-      </span>
-      <span class="badge badge-intern">
-        <span class="pulse-dot-blue"></span> Seeking Internship
-      </span>
-    </div>
-  </div>
-
-  <!-- Premium Glass Stats Cards Row -->
-  <div class="stats-grid">
-    <div class="stat-card">
-      <div class="stat-icon">🎓</div>
-      <div class="stat-info">
-        <span class="stat-value" data-target="9.1">9.1</span>
-        <span class="stat-label">Current CGPA</span>
-      </div>
-      <div class="card-glow"></div>
-    </div>
-
-    <div class="stat-card">
-      <div class="stat-icon">🚀</div>
-      <div class="stat-info">
-        <span class="stat-value" data-target="14">14+</span>
-        <span class="stat-label">Projects Shipped</span>
-      </div>
-      <div class="card-glow"></div>
-    </div>
-
-    <div class="stat-card">
-      <div class="stat-icon">📜</div>
-      <div class="stat-info">
-        <span class="stat-value" data-target="8">8</span>
-        <span class="stat-label">Certifications</span>
-      </div>
-      <div class="card-glow"></div>
-    </div>
-
-    <div class="stat-card">
-      <div class="stat-icon">⚔️</div>
-      <div class="stat-info">
-        <span class="stat-value" data-target="450">450+</span>
-        <span class="stat-label">LeetCode Score</span>
-      </div>
-      <div class="card-glow"></div>
-    </div>
-  </div>
-
-  <!-- Cinematic Journey Roadmap -->
-  <div class="roadmap-section">
-    <h3 class="roadmap-title">The Journey Trajectory</h3>
-    
-    <div class="timeline-container">
-      <div class="timeline-line">
-        <div class="timeline-progress"></div>
-      </div>
-      
-      <div class="timeline-nodes">
-        <!-- Node 1 -->
-        <div class="roadmap-node active">
-          <div class="node-marker"></div>
-          <div class="node-content">
-            <span class="node-date">2024</span>
-            <h4>Foundations & Core Logic</h4>
-            <p>Mastered Data Structures, Algorithms, and Core Java/C#. Developed heavy terminal utilities.</p>
-          </div>
+    <!-- Developer Intelligence Hub -->
+    <section class="dashboard-container">
+        <div class="dashboard-header">
+            <div class="profile-meta">
+                <h2 class="dashboard-title">Developer Intelligence Hub</h2>
+                <p class="dashboard-subtitle">Core development focus, shipped builds & active trajectory</p>
+            </div>
+            <div class="status-badges">
+                <span class="badge badge-work">
+                    <span class="pulse-dot"></span> Open To Work
+                </span>
+                <span class="badge badge-intern">
+                    <span class="pulse-dot-blue"></span> Seeking Internship
+                </span>
+            </div>
         </div>
 
-        <!-- Node 2 -->
-        <div class="roadmap-node active">
-          <div class="node-marker"></div>
-          <div class="node-content">
-            <span class="node-date">2025</span>
-            <h4>Full-Stack Expansion</h4>
-            <p>Architected scalable Node.js, Express, and MongoDB systems. Shipped 'Wonderlust' CRUD platform.</p>
-          </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">🎓</div>
+                <div class="stat-info">
+                    <span class="stat-value">BCA</span>
+                    <span class="stat-label">Computer Applications</span>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🚀</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="projectCountStat">4+</span>
+                    <span class="stat-label">Featured Builds</span>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⚙️</div>
+                <div class="stat-info">
+                    <span class="stat-value">MERN</span>
+                    <span class="stat-label">Full-Stack & APIs</span>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🧠</div>
+                <div class="stat-info">
+                    <span class="stat-value">Java</span>
+                    <span class="stat-label">DSA & Problem Solving</span>
+                </div>
+                <div class="card-glow"></div>
+            </div>
         </div>
 
-        <!-- Node 3 -->
-        <div class="roadmap-node current">
-          <div class="node-marker"></div>
-          <div class="node-content">
-            <span class="node-date">2026</span>
-            <h4>Systems & Optimization</h4>
-            <p>Deep-diving into OS internals, memory performance tuning, and real-time data-driven sports dashboards.</p>
-          </div>
+        <div class="roadmap-section">
+            <h3 class="roadmap-title">Development Trajectory</h3>
+            <div class="timeline-container">
+                <div class="timeline-line">
+                    <div class="timeline-progress"></div>
+                </div>
+
+                <div class="timeline-nodes">
+                    <div class="roadmap-node active">
+                        <div class="node-marker"></div>
+                        <div class="node-content">
+                            <span class="node-date">Core</span>
+                            <h4>Programming & DSA</h4>
+                            <p>Built strong fundamentals in C, Java, Data Structures & Algorithms, and core CS subjects.</p>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-node active">
+                        <div class="node-marker"></div>
+                        <div class="node-content">
+                            <span class="node-date">Full-Stack</span>
+                            <h4>Web & API Engineering</h4>
+                            <p>Developed full-stack apps using HTML, CSS, Tailwind, React, Node.js, Express, MongoDB & SQL.</p>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-node current">
+                        <div class="node-marker"></div>
+                        <div class="node-content">
+                            <span class="node-date">Active</span>
+                            <h4>Product & Automation Builds</h4>
+                            <p>Shipping interactive platforms, auth & validation flows, and Google Apps Script / Sheets integrations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-    
-
+    </section>
 
     <!-- Skills -->
     <section class="skills-section" id="skills">
@@ -246,8 +217,7 @@
                 <h2 class="skills-main-title">Professional <span class="highlight-gold">Skills</span></h2>
                 <div class="skills-title-line"></div>
                 <p class="skills-desc">
-                    I combine artistic design with clean code to build premium digital experiences.
-                    Here is a breakdown of my technical proficiency.
+                    Practical tools and technologies I use to build end-to-end applications and clean interfaces.
                 </p>
             </div>
 
@@ -256,66 +226,32 @@
                     <div class="skill-icon-box">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3>Frontend Architecture</h3>
-                    <p class="card-desc">Crafting responsive, pixel-perfect, and ultra-fast user interfaces.</p>
+                    <h3>Frontend & UI</h3>
+                    <p class="card-desc">Responsive interfaces, component styling, and interactive client flows.</p>
 
                     <div class="skill-bars-container">
                         <div class="skill-progress-item">
                             <div class="skill-info">
-                                <span class="skill-name">HTML5 & CSS3</span>
-                                <span class="skill-percentage">95%</span>
+                                <span class="skill-name">HTML5, CSS3, Tailwind & Bootstrap</span>
+                                <span class="skill-percentage">92%</span>
                             </div>
-                            <div class="progress-line"><span style="width: 95%;"></span></div>
+                            <div class="progress-line"><span style="width: 92%;"></span></div>
                         </div>
 
                         <div class="skill-progress-item">
                             <div class="skill-info">
                                 <span class="skill-name">JavaScript (ES6+)</span>
-                                <span class="skill-percentage">85%</span>
+                                <span class="skill-percentage">86%</span>
                             </div>
-                            <div class="progress-line"><span style="width: 85%;"></span></div>
+                            <div class="progress-line"><span style="width: 86%;"></span></div>
                         </div>
 
                         <div class="skill-progress-item">
                             <div class="skill-info">
                                 <span class="skill-name">React.js</span>
-                                <span class="skill-percentage">80%</span>
+                                <span class="skill-percentage">82%</span>
                             </div>
-                            <div class="progress-line"><span style="width: 80%;"></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon-box">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>UI/UX & Branding</h3>
-                    <p class="card-desc">Designing premium layout systems, typography, and visual assets.</p>
-
-                    <div class="skill-bars-container">
-                        <div class="skill-progress-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Figma / Adobe XD</span>
-                                <span class="skill-percentage">90%</span>
-                            </div>
-                            <div class="progress-line"><span style="width: 90%;"></span></div>
-                        </div>
-
-                        <div class="skill-progress-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Visual Hierarchy</span>
-                                <span class="skill-percentage">88%</span>
-                            </div>
-                            <div class="progress-line"><span style="width: 88%;"></span></div>
-                        </div>
-
-                        <div class="skill-progress-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Bootstrap</span>
-                                <span class="skill-percentage">75%</span>
-                            </div>
-                            <div class="progress-line"><span style="width: 75%;"></span></div>
+                            <div class="progress-line"><span style="width: 82%;"></span></div>
                         </div>
                     </div>
                 </div>
@@ -324,32 +260,66 @@
                     <div class="skill-icon-box">
                         <i class="fas fa-server"></i>
                     </div>
-                    <h3>Backend & Tools</h3>
-                    <p class="card-desc">Managing reliable database models and deployment workflows.</p>
+                    <h3>Backend & Databases</h3>
+                    <p class="card-desc">Server routes, authentication, schema validation, and relational/NoSQL data.</p>
 
                     <div class="skill-bars-container">
                         <div class="skill-progress-item">
                             <div class="skill-info">
-                                <span class="skill-name">Node.js / Express</span>
-                                <span class="skill-percentage">70%</span>
+                                <span class="skill-name">Node.js, Express.js & REST APIs</span>
+                                <span class="skill-percentage">82%</span>
                             </div>
-                            <div class="progress-line"><span style="width: 70%;"></span></div>
+                            <div class="progress-line"><span style="width: 82%;"></span></div>
                         </div>
 
                         <div class="skill-progress-item">
                             <div class="skill-info">
-                                <span class="skill-name">MongoDB / SQL</span>
-                                <span class="skill-percentage">75%</span>
+                                <span class="skill-name">MongoDB & MongoDB Atlas</span>
+                                <span class="skill-percentage">80%</span>
                             </div>
-                            <div class="progress-line"><span style="width: 75%;"></span></div>
+                            <div class="progress-line"><span style="width: 80%;"></span></div>
                         </div>
 
                         <div class="skill-progress-item">
                             <div class="skill-info">
-                                <span class="skill-name">Git & Deployment</span>
+                                <span class="skill-name">SQL, MySQL & PostgreSQL</span>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="progress-line"><span style="width: 78%;"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon-box">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Languages & Workflow</h3>
+                    <p class="card-desc">Core programming, problem solving, version control, and cloud deployments.</p>
+
+                    <div class="skill-bars-container">
+                        <div class="skill-progress-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java (DSA) & C / C#</span>
                                 <span class="skill-percentage">85%</span>
                             </div>
                             <div class="progress-line"><span style="width: 85%;"></span></div>
+                        </div>
+
+                        <div class="skill-progress-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git, GitHub & Vercel</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="progress-line"><span style="width: 88%;"></span></div>
+                        </div>
+
+                        <div class="skill-progress-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Google Apps Script & Sheets</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-line"><span style="width: 80%;"></span></div>
                         </div>
                     </div>
                 </div>
@@ -357,7 +327,7 @@
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects (Dynamically populated + clickable to project.html detail page) -->
     <section class="projects-section" id="projects">
         <div class="projects-container-wrapper">
             <div class="projects-header">
@@ -365,114 +335,11 @@
                 <h2 class="projects-main-title">Featured <span class="highlight-gold">Projects</span></h2>
                 <div class="projects-title-line"></div>
                 <p class="projects-desc">
-                    A curated collection of premium web applications, bespoke design systems, and seamless digital solutions.
+                    Click any project card or "View Full Details" to open its complete description page and launch the live project.
                 </p>
             </div>
 
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-                            alt="E-Commerce Platform" class="project-img">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="proj-link-btn" title="View Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="proj-link-btn" title="View Source Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-meta">
-                            <span class="project-tag">Web Application</span>
-                            <span class="project-year">2026</span>
-                        </div>
-                        <h3 class="project-title">WONDERLUST</h3>
-                        <p class="project-text">
-                            A high-performance storefront designed for luxury brands with seamless animations, optimized headless architecture, and headless checkout mechanisms.
-                        </p>
-                        <div class="project-tech-stack">
-                            <span>Next.js</span>
-                            <span>GraphQL</span>
-                            <span>Stripe</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80"
-                            alt="SaaS Dashboard" class="project-img">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="proj-link-btn" title="View Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="proj-link-btn" title="View Source Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-meta">
-                            <span class="project-tag">Web Platform</span>
-                            <span class="project-year">2026</span>
-                        </div>
-                        <h3 class="project-title">Simon Say's Game</h3>
-                        <p class="project-text">
-                            Developed an interactive Simon Says memory game using HTML, CSS, and JavaScript. Players must repeat increasingly complex color sequences.
-                        </p>
-                        <div class="project-tech-stack">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
-                            alt="Fintech App" class="project-img">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="proj-link-btn" title="View Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="proj-link-btn" title="View Source Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-meta">
-                            <span class="project-tag">Fintech Solution</span>
-                            <span class="project-year">2025</span>
-                        </div>
-                        <h3 class="project-title">Vanguard Crypt Vault</h3>
-                        <p class="project-text">
-                            A secure cryptocurrency tracking and dynamic multi-chain wallet dashboard utilizing advanced biometric simulated cryptographic validation locks.
-                        </p>
-                        <div class="project-tech-stack">
-                            <span>TypeScript</span>
-                            <span>Tailwind</span>
-                            <span>Web3.js</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-view-all">
-                <a href="#" class="btn-project-premium">
-                    <span>View All Masterpieces</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+            <div class="projects-grid" id="projectsGrid"></div>
         </div>
     </section>
 
@@ -487,7 +354,7 @@
                 </h2>
                 <div class="contact-title-line"></div>
                 <p class="contact-desc">
-                    Have a premium project in mind? Tell me about your requirements.
+                    Have a project, role, or collaboration idea? Send a message below.
                 </p>
             </div>
 
@@ -512,71 +379,71 @@
                     <div class="info-card">
                         <i class="fas fa-shield-alt"></i>
                         <div>
-                            <h4>Secure Inquiry</h4>
-                            <p>Your project information stays private & secure.</p>
+                            <h4>Direct Inquiry</h4>
+                            <p>Reach out for full-stack development & internships.</p>
                         </div>
                     </div>
                 </div>
 
                 <form id="premiumContactForm" class="contact-form-card">
-    <div class="form-row">
-        <div class="input-group">
-            <label for="client_name">Full Name *</label>
-            <input type="text" id="client_name" name="from_name" placeholder="Enter your full name" required>
-        </div>
-    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="client_name">Full Name *</label>
+                            <input type="text" id="client_name" name="from_name" placeholder="Enter your full name" required>
+                        </div>
+                    </div>
 
-    <div class="form-row">
-        <div class="input-group">
-            <label for="client_email">Email *</label>
-            <input type="email" id="client_email" name="reply_to" placeholder="Enter your email" required>
-        </div>
-    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="client_email">Email *</label>
+                            <input type="email" id="client_email" name="reply_to" placeholder="Enter your email" required>
+                        </div>
+                    </div>
 
-    <div class="form-row">
-        <div class="input-group">
-            <label for="client_project">Project Type *</label>
-            <select id="client_project" name="project_type" required>
-                <option value="">Choose Project Type</option>
-                <option>Business Website</option>
-                <option>Portfolio Website</option>
-                <option>E-Commerce Store</option>
-                <option>Custom Web App</option>
-                <option>Landing Page</option>
-                <option>UI/UX Design</option>
-            </select>
-        </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="client_project">Project Type *</label>
+                            <select id="client_project" name="project_type" required>
+                                <option value="">Choose Project Type</option>
+                                <option>Full Stack Web App</option>
+                                <option>Frontend / React App</option>
+                                <option>Backend & REST API</option>
+                                <option>Portfolio Website</option>
+                                <option>Internship / Role Inquiry</option>
+                            </select>
+                        </div>
 
-        <div class="input-group">
-            <label for="client_timeline">Timeline</label>
-            <select id="client_timeline" name="timeline">
-                <option>Flexible</option>
-                <option>Urgent (2-5 Days)</option>
-                <option>1-2 Weeks</option>
-                <option>1 Month</option>
-                <option>Long Term</option>
-            </select>
-        </div>
-    </div>
+                        <div class="input-group">
+                            <label for="client_timeline">Timeline</label>
+                            <select id="client_timeline" name="timeline">
+                                <option>Flexible</option>
+                                <option>Urgent (2-5 Days)</option>
+                                <option>1-2 Weeks</option>
+                                <option>1 Month</option>
+                                <option>Long Term</option>
+                            </select>
+                        </div>
+                    </div>
 
-    <div class="input-group">
-        <label for="client_msg">Project Brief Description *</label>
-        <textarea id="client_msg" name="message" rows="6"
-            placeholder="Describe your complete project vision, business goals, functionality and important details..."
-            required></textarea>
-    </div>
+                    <div class="input-group">
+                        <label for="client_msg">Project Brief Description *</label>
+                        <textarea id="client_msg" name="message" rows="5"
+                            placeholder="Describe your project goals, features, or opportunity details..."
+                            required></textarea>
+                    </div>
 
-    <div class="input-group">
-        <label for="additional_req">Additional Requirements</label>
-        <textarea id="additional_req" name="additional_req" rows="4"
-            placeholder="Mention extra features, animations, payment gateway, admin panel, etc."></textarea>
-    </div>
+                    <div class="input-group">
+                        <label for="additional_req">Additional Requirements</label>
+                        <textarea id="additional_req" name="additional_req" rows="3"
+                            placeholder="Optional notes, integrations, or references..."></textarea>
+                    </div>
 
-    <button type="submit" class="btn-submit-premium">
-        <span>Send Project Inquiry</span>
-        <i class="fas fa-paper-plane"></i>
-    </button>
-</form>
+                    <button type="submit" class="btn-submit-premium">
+                        <span>Send Project Inquiry</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <p id="contactStatus" class="form-status"></p>
+                </form>
             </div>
         </div>
     </section>
@@ -588,12 +455,12 @@
         <div class="footer-wrapper">
             <div class="footer-brand">
                 <h1>ANIK.</h1>
-                <p>Crafting premium modern websites with luxury UI/UX and powerful web technologies.</p>
+                <p>Building full-stack web applications, clean interfaces, and practical software solutions.</p>
                 <div class="footer-icons">
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/anikrastogi999-dot" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://linkedin.com/in/anik-rastogi-tech-programmerdev999" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="mailto:anikrastogi999@gmail.com">
@@ -612,24 +479,25 @@
             </div>
 
             <div class="footer-services">
-                <h3>Services</h3>
-                <p>Frontend Development</p>
-                <p>Backend Development</p>
-                <p>MERN Stack Projects</p>
-                <p>UI/UX Design</p>
-                <p>Responsive Websites</p>
+                <h3>Focus Areas</h3>
+                <p>Full-Stack Web Apps</p>
+                <p>Node.js & Express APIs</p>
+                <p>React & Tailwind UI</p>
+                <p>MongoDB & SQL Databases</p>
+                <p>Java & Problem Solving</p>
             </div>
 
             <div class="footer-contact">
                 <h3>Contact</h3>
                 <p><i class="fa-solid fa-envelope"></i> anikrastogi999@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i> +91 9045655255</p>
-                <p><i class="fa-solid fa-location-dot"></i> India</p>
+                <p><i class="fa-solid fa-location-dot"></i> Meerut, India</p>
             </div>
         </div>
 
         <div class="footer-bottom">
             <p>© 2026 Anik Rastogi • All Rights Reserved</p>
+            <a href="admin.html" class="discreet-admin-link" title="Admin Workspace (Ctrl+Shift+A)">Workspace</a>
         </div>
     </footer>
 
