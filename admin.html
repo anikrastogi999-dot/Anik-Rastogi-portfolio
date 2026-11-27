@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Workspace | Project Manager</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/titlelogo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="subpage-body">
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="./assets/aniklogo.png" alt="Anik Rastogi Logo" class="logo-img">
+            <div class="logo-content">
+                <h2>A R</h2>
+                <h2><span>PRIVATE WORKSPACE</span></h2>
+            </div>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Back to Portfolio</a></li>
+            <li><a href="index.html#projects">View Projects</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="admin-main">
+        <!-- PIN Gate -->
+        <div class="admin-auth-box" id="adminAuthBox">
+            <span class="contact-subtitle">Restricted Access</span>
+            <h2>Enter Workspace PIN</h2>
+            <p>Private project upload & management panel (Default PIN: <code>1234</code>).</p>
+            <form id="adminPinForm" class="admin-pin-form">
+                <input type="password" id="adminPinInput" placeholder="Enter PIN" required>
+                <button type="submit" class="btn-submit-premium">
+                    <span>Unlock</span>
+                    <i class="fas fa-lock-open"></i>
+                </button>
+            </form>
+            <p id="pinError" class="form-status"></p>
+        </div>
+
+        <!-- Admin Dashboard -->
+        <div class="admin-dashboard" id="adminDashboard" style="display: none;">
+            <div class="admin-top-bar">
+                <div>
+                    <span class="contact-subtitle">Project Management</span>
+                    <h2>Upload & Manage <span class="highlight-gold">Projects</span></h2>
+                </div>
+                <div class="admin-actions">
+                    <button type="button" id="resetDefaultProjectsBtn" class="btn-secondary-outline">
+                        Reset Default Projects
+                    </button>
+                    <button type="button" id="lockAdminBtn" class="btn-secondary-outline">
+                        Lock Panel
+                    </button>
+                </div>
+            </div>
+
+            <div class="admin-grid">
+                <!-- Upload Form -->
+                <form id="uploadProjectForm" class="contact-form-card admin-form-card">
+                    <h3>Add New Project</h3>
+
+                    <div class="input-group">
+                        <label for="projTitle">Project Title *</label>
+                        <input type="text" id="projTitle" placeholder="e.g., Smart Seat Booking System" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="projTag">Category Tag *</label>
+                            <input type="text" id="projTag" placeholder="e.g., Full Stack / Web App" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="projYear">Year *</label>
+                            <input type="text" id="projYear" value="2026" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="projShortDesc">Short Card Summary *</label>
+                        <textarea id="projShortDesc" rows="2" placeholder="1-2 lines shown on the portfolio card..." required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="projFullDesc">Full Project Description *</label>
+                        <textarea id="projFullDesc" rows="5" placeholder="Detailed overview, architecture, workflow, and how it works..." required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="projHighlights">Key Features (comma separated)</label>
+                        <input type="text" id="projHighlights" placeholder="Authentication, REST APIs, Real-time Filtering, Responsive UI">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="projTech">Tech Stack (comma separated) *</label>
+                        <input type="text" id="projTech" placeholder="Node.js, Express, MongoDB, React, Tailwind" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="projLiveUrl">Live Project URL *</label>
+                            <input type="url" id="projLiveUrl" placeholder="https://your-live-project.vercel.app" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="projGithubUrl">GitHub Repo URL</label>
+                            <input type="url" id="projGithubUrl" value="https://github.com/anikrastogi999-dot">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="projImageUrl">Cover Image URL (or local path)</label>
+                        <input type="text" id="projImageUrl"
+                            value="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80">
+                    </div>
+
+                    <button type="submit" class="btn-submit-premium">
+                        <span>Publish Project</span>
+                        <i class="fas fa-upload"></i>
+                    </button>
+                    <p id="uploadStatus" class="form-status"></p>
+                </form>
+
+                <!-- Existing Projects List -->
+                <div class="admin-list-panel">
+                    <h3>Published Projects (<span id="adminProjectCount">0</span>)</h3>
+                    <div id="adminProjectsList" class="admin-projects-list"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
